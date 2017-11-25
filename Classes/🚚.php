@@ -33,7 +33,7 @@ class 🚚
 	 */
 	public function 積み下ろす(&$dest_list)
 	{
-		$dest_list[$this->denpyo->getItem()->getName()] = new Stock($this->denpyo->getItem(), $this->denpyo->getQuantity());
+		$dest_list[] = new Stock($this->denpyo->getItem(), $this->denpyo->getQuantity());
 		$this->status = new 🚚CompleteStatus();
 	}
 
